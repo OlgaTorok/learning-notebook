@@ -1,0 +1,94 @@
+<div class="">
+  <h1 class="header">Regular Table</h1>
+  <div class="table-container">
+    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+      <ng-container matColumnDef="id">
+        <th mat-header-cell *matHeaderCellDef>ID</th>
+        <td mat-cell *matCellDef="let element">
+          <!-- <span class="mobile-label">ID</span> -->
+          {{ element.id }}
+        </td>
+      </ng-container>
+      <ng-container matColumnDef="color">
+        <th mat-header-cell *matHeaderCellDef>Color</th>
+        <td mat-cell *matCellDef="let element">
+          <!-- <span class="mobile-label">Color</span> -->
+          {{ element.color }}
+        </td>
+      </ng-container>
+      <ng-container matColumnDef="value">
+        <th mat-header-cell *matHeaderCellDef>Value</th>
+        <td mat-cell *matCellDef="let element">
+          <!-- <span class="mobile-label">Value</span> -->
+          {{ element.value }}
+        </td>
+      </ng-container>
+      <ng-container matColumnDef="complimentary">
+        <th mat-header-cell *matHeaderCellDef>Complimentary</th>
+        <td mat-cell *matCellDef="let element">
+          <!-- <span class="mobile-label">Complimentary</span> -->
+          {{ element.complimentary }}
+        </td>
+      </ng-container>
+      <ng-container matColumnDef="monochromatic">
+        <th mat-header-cell *matHeaderCellDef>Monochromatic</th>
+        <td mat-cell *matCellDef="let element">
+          <!-- <span class="mobile-label">Monochromatic</span> -->
+          {{ element.monochromatic }}
+        </td>
+      </ng-container>
+      <ng-container matColumnDef="analog1">
+        <th mat-header-cell *matHeaderCellDef>Analogous 1</th>
+        <td mat-cell *matCellDef="let element">
+          <!-- <span class="mobile-label">Analogous 1</span> -->
+          {{ element.analog1 }}
+        </td>
+      </ng-container>
+      <ng-container matColumnDef="analog2">
+        <th mat-header-cell *matHeaderCellDef>Analogous 2</th>
+        <td mat-cell *matCellDef="let element">
+          <!-- <span class="mobile-label">Analogous 2</span> -->
+          {{ element.analog2 }}
+        </td>
+      </ng-container>
+      <ng-container matColumnDef="triadic1">
+        <th mat-header-cell *matHeaderCellDef>Triadic 1</th>
+        <td mat-cell *matCellDef="let element">
+          <!-- <span class="mobile-label">Triadic 1</span> -->
+          {{ element.triadic1 }}
+        </td>
+      </ng-container>
+      <ng-container matColumnDef="triadic2">
+        <th mat-header-cell *matHeaderCellDef>Triadic 2</th>
+        <td mat-cell *matCellDef="let element">
+          <!-- <span class="mobile-label">Triadic 2</span> -->
+          {{ element.triadic2 }}
+        </td>
+      </ng-container>
+      <ng-container matColumnDef="tetradic1">
+        <th mat-header-cell *matHeaderCellDef>Tetradic 1</th>
+        <td mat-cell *matCellDef="let element">
+          <!-- <span class="mobile-label">Tetradic 1</span> -->
+          {{ element.tetradic1 }}
+        </td>
+      </ng-container>
+      <ng-container matColumnDef="tetradic2">
+        <th mat-header-cell *matHeaderCellDef>Tetradic 2</th>
+        <td mat-cell *matCellDef="let element">
+          <!-- <span class="mobile-label">Tetradic 2</span> -->
+          {{ element.tetradic2 }}
+        </td>
+      </ng-container>
+      <ng-container matColumnDef="tetradic3">
+        <th mat-header-cell *matHeaderCellDef>Tetradic 3</th>
+        <td mat-cell *matCellDef="let element">
+          <!-- <span class="mobile-label">Tetradic 3</span> -->
+          {{ element.tetradic3 }}
+        </td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+    </table>
+  </div>
+</div>

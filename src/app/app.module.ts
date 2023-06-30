@@ -11,8 +11,11 @@ import { MatCardModule } from '@angular/material/card';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatMenuModule } from '@angular/material/menu';
+import { MatTableModule } from '@angular/material/table';
+
 import { LearnNgComponent } from './learn/learn-ng/learn-ng.component';
 import { LearnReactComponent } from './learn/learn-react/learn-react.component';
+import { TableComponent } from './tables/table/table.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +23,7 @@ import { LearnReactComponent } from './learn/learn-react/learn-react.component';
     HomeComponent,
     LearnNgComponent,
     LearnReactComponent,
+    TableComponent,
   ],
   imports: [
     BrowserModule,
@@ -30,6 +34,7 @@ import { LearnReactComponent } from './learn/learn-react/learn-react.component';
     MatDividerModule,
     MatExpansionModule,
     MatMenuModule,
+    MatTableModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

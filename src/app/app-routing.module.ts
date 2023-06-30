@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { LearnNgComponent } from './learn/learn-ng/learn-ng.component';
 import { LearnReactComponent } from './learn/learn-react/learn-react.component';
+import { TableComponent } from './tables/table/table.component';
 
 
 const routes: Routes = [
@@ -18,6 +19,10 @@ const routes: Routes = [
   {
     path: 'learn-react',
     component: LearnReactComponent,
+  },
+  {
+    path: 'table',
+    component: TableComponent,
   },
 
 ];
