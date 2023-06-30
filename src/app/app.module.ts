@@ -12,12 +12,14 @@ import { MatDividerModule } from '@angular/material/divider';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatMenuModule } from '@angular/material/menu';
 import { LearnNgComponent } from './learn/learn-ng/learn-ng.component';
+import { LearnReactComponent } from './learn/learn-react/learn-react.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     LearnNgComponent,
+    LearnReactComponent,
   ],
   imports: [
     BrowserModule,
