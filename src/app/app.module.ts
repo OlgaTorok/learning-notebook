@@ -11,11 +11,13 @@ import { MatCardModule } from '@angular/material/card';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatMenuModule } from '@angular/material/menu';
+import { LearnNgComponent } from './learn/learn-ng/learn-ng.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
+    LearnNgComponent,
   ],
   imports: [
     BrowserModule,
