@@ -5,6 +5,7 @@ import { HomeComponent } from './home/home.component';
 import { LearnNgComponent } from './learn/learn-ng/learn-ng.component';
 import { LearnReactComponent } from './learn/learn-react/learn-react.component';
 import { TableComponent } from './tables/table/table.component';
+import { TableChangingComponent } from './tables/table-changing/table-changing.component';
 
 
 const routes: Routes = [
@@ -23,6 +24,10 @@ const routes: Routes = [
   {
     path: 'table',
     component: TableComponent,
+  },
+  {
+    path: 'table-changing',
+    component: TableChangingComponent,
   },
 
 ];

@@ -1,4 +1,4 @@
-[
+export const periodData = [
   {
     position: 1,
     name: "Hydrogen",

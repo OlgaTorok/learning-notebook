@@ -16,6 +16,7 @@ import { MatTableModule } from '@angular/material/table';
 import { LearnNgComponent } from './learn/learn-ng/learn-ng.component';
 import { LearnReactComponent } from './learn/learn-react/learn-react.component';
 import { TableComponent } from './tables/table/table.component';
+import { TableChangingComponent } from './tables/table-changing/table-changing.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { TableComponent } from './tables/table/table.component';
     LearnNgComponent,
     LearnReactComponent,
     TableComponent,
+    TableChangingComponent,
   ],
   imports: [
     BrowserModule,
