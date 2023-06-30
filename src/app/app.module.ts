@@ -17,6 +17,7 @@ import { LearnNgComponent } from './learn/learn-ng/learn-ng.component';
 import { LearnReactComponent } from './learn/learn-react/learn-react.component';
 import { TableComponent } from './tables/table/table.component';
 import { TableChangingComponent } from './tables/table-changing/table-changing.component';
+import { TableExpandableComponent } from './tables/table-expandable/table-expandable.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { TableChangingComponent } from './tables/table-changing/table-changing.c
     LearnReactComponent,
     TableComponent,
     TableChangingComponent,
+    TableExpandableComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,4 +1,4 @@
-[
+export const data = [
   {
     position: 1,
     name: "Hydrogen",
