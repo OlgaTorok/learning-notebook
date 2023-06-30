@@ -1,0 +1,18 @@
+/* Flex styles */
+
+.fx {
+  display: flex;
+}
+
+.fx-row {
+  flex-direction: row;
+}
+
+.fx-column {
+  flex-direction: column;
+}
+
+.jc-sp-around {
+  justify-content: space-around;
+}
+
