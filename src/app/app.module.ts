@@ -24,6 +24,7 @@ import { TableComponent } from './tables/table/table.component';
 import { TableChangingComponent } from './tables/table-changing/table-changing.component';
 import { TableExpandableComponent } from './tables/table-expandable/table-expandable.component';
 import { TableHiddenColsComponent } from './tables/table-hidden-cols/table-hidden-cols.component';
+import { TableOrderComponent } from './tables/table-order/table-order.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { TableHiddenColsComponent } from './tables/table-hidden-cols/table-hidde
     TableChangingComponent,
     TableExpandableComponent,
     TableHiddenColsComponent,
+    TableOrderComponent,
   ],
   imports: [
     BrowserModule,

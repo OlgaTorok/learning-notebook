@@ -1,0 +1,70 @@
+table td.mat-cell {
+  width: 5em;
+  margin: 0;
+  padding: 0;
+}
+
+th.mat-header-cell:first-of-type,
+td.mat-cell:first-of-type,
+td.mat-footer-cell:first-of-type {
+  padding-left: 0;
+}
+
+th.mat-header-cell:last-of-type,
+td.mat-cell:last-of-type,
+td.mat-footer-cell:last-of-type {
+  padding-right: 0;
+}
+
+td.cell:nth-child(odd) {
+  background-color: #ff6991;
+  margin: 0.5em;
+}
+
+td.cell:nth-child(even) {
+  background-color: #69ffd7;
+  margin: 0.5em;
+}
+
+/* ----------  ---------- */
+@media screen and (max-width: 1400px) {
+  .card th.mat-header-cell:nth-child(8),
+  .card td.mat-cell:nth-child(8) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .card th.mat-header-cell:nth-child(7),
+  .card td.mat-cell:nth-child(7) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .card th.mat-header-cell:nth-child(6),
+  .card td.mat-cell:nth-child(6) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .card th.mat-header-cell:nth-child(5),
+  .card td.mat-cell:nth-child(5) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .card th.mat-header-cell:nth-child(4),
+  .card td.mat-cell:nth-child(4) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .card th.mat-header-cell:nth-child(3),
+  .card td.mat-cell:nth-child(3) {
+    display: none;
+  }
+}
