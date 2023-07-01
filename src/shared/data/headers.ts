@@ -1,4 +1,4 @@
-[
+export const data = [
   {
     header1: "Cell 1",
     header2: "Cell 2",
