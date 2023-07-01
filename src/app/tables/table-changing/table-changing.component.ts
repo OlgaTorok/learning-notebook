@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { ShortElement } from './../../../shared/models/data.model';
-import { periodData } from '../../../shared/data/periodic';
+import { periodicData } from '../../../shared/data/periodic';
 
 @Component({
   selector: 'app-table-changing',
@@ -11,7 +11,7 @@ export class TableChangingComponent {
 
   displayedColumns: string[] = ['name', 'weight', 'symbol', 'position'];
   columnsToDisplay: string[] = this.displayedColumns.slice();
-  data: ShortElement[] = periodData;
+  data: ShortElement[] = periodicData;
 
   constructor() { }
 
