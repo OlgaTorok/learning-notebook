@@ -1,0 +1,70 @@
+<div class="table-container card">
+  <h1 class="header">All-In-One Table</h1>
+  <button class="raised-button" (click)="generatePdf()">Download</button>
+  <table
+    mat-table
+    [dataSource]="dataSource"
+    cdkDropList
+    cdkDropListOrientation="horizontal"
+    (cdkDropListDropped)="drop($event)"
+  >
+    <ng-container matColumnDef="header1">
+      <th mat-header-cell cdkDrag *matHeaderCellDef>Header 1</th>
+      <td mat-cell *matCellDef="let element" class="cell">
+        {{ element.header1 }}
+      </td>
+    </ng-container>
+
+    <ng-container matColumnDef="header2">
+      <th mat-header-cell cdkDrag *matHeaderCellDef>Header 2</th>
+      <td mat-cell *matCellDef="let element" class="cell">
+        {{ element.header2 }}
+      </td>
+    </ng-container>
+
+    <ng-container matColumnDef="header3">
+      <th mat-header-cell cdkDrag *matHeaderCellDef>Header 3</th>
+      <td mat-cell *matCellDef="let element" class="cell">
+        {{ element.header3 }}
+      </td>
+    </ng-container>
+
+    <ng-container matColumnDef="header4">
+      <th mat-header-cell cdkDrag *matHeaderCellDef>Header 4</th>
+      <td mat-cell *matCellDef="let element" class="cell">
+        {{ element.header4 }}
+      </td>
+    </ng-container>
+
+    <ng-container matColumnDef="header5">
+      <th mat-header-cell cdkDrag *matHeaderCellDef>Header 5</th>
+      <td mat-cell *matCellDef="let element" class="cell">
+        {{ element.header5 }}
+      </td>
+    </ng-container>
+
+    <ng-container matColumnDef="header6">
+      <th mat-header-cell cdkDrag *matHeaderCellDef>Header 6</th>
+      <td mat-cell *matCellDef="let element" class="cell">
+        {{ element.header6 }}
+      </td>
+    </ng-container>
+
+    <ng-container matColumnDef="header7">
+      <th mat-header-cell cdkDrag *matHeaderCellDef>Header 7</th>
+      <td mat-cell *matCellDef="let element" class="cell">
+        {{ element.header7 }}
+      </td>
+    </ng-container>
+
+    <ng-container matColumnDef="header8">
+      <th mat-header-cell cdkDrag *matHeaderCellDef>Header 8</th>
+      <td mat-cell *matCellDef="let element" class="cell">
+        {{ element.header8 }}
+      </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="columns"></tr>
+    <tr mat-row *matRowDef="let row; columns: columns"></tr>
+  </table>
+</div>

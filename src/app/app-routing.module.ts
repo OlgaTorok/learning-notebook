@@ -10,6 +10,7 @@ import { TableExpandableComponent } from './tables/table-expandable/table-expand
 import { TableHiddenColsComponent } from './tables/table-hidden-cols/table-hidden-cols.component';
 import { TableOrderComponent } from './tables/table-order/table-order.component';
 import { TableResponsiveComponent } from './tables/table-responsive/table-responsive.component';
+import { TableSuperComponent } from './tables/table-super/table-super.component';
 
 const routes: Routes = [
   {
@@ -48,7 +49,10 @@ const routes: Routes = [
     path: 'table-responsive',
     component: TableResponsiveComponent,
   },
-
+  {
+    path: 'table-super',
+    component: TableSuperComponent,
+  }
 ];
 
 @NgModule({
