@@ -27,6 +27,7 @@ import { TableHiddenColsComponent } from './tables/table-hidden-cols/table-hidde
 import { TableOrderComponent } from './tables/table-order/table-order.component';
 import { TableResponsiveComponent } from './tables/table-responsive/table-responsive.component';
 import { TableSuperComponent } from './tables/table-super/table-super.component';
+import { TableHeatmapComponent } from './tables/table-heatmap/table-heatmap.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +42,7 @@ import { TableSuperComponent } from './tables/table-super/table-super.component'
     TableOrderComponent,
     TableResponsiveComponent,
     TableSuperComponent,
+    TableHeatmapComponent,
   ],
   imports: [
     BrowserModule,
