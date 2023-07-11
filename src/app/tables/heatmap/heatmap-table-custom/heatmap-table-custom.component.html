@@ -1,0 +1,98 @@
+<section class="table-container">
+  <h2 class="sub-header text-center">Custom heatmap</h2>
+  <section>
+    <table *ngIf="dataSource.length !== 0" mat-table [dataSource]="dataSource">
+      <ng-container matColumnDef="Name">
+        <th mat-header-cell *matHeaderCellDef>Name</th>
+        <td mat-cell *matCellDef="let row">{{ row.Name }}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="Jan">
+        <th mat-header-cell *matHeaderCellDef>Jan</th>
+        <td mat-cell *matCellDef="let row" [ngStyle]="getColour(row.Jan)">
+          {{ row.Jan }}
+        </td>
+      </ng-container>
+
+      <ng-container matColumnDef="Feb">
+        <th mat-header-cell *matHeaderCellDef>Feb</th>
+        <td mat-cell *matCellDef="let row" [ngStyle]="getColour(row.Feb)">
+          {{ row.Feb }}
+        </td>
+      </ng-container>
+
+      <ng-container matColumnDef="Mar">
+        <th mat-header-cell *matHeaderCellDef>Mar</th>
+        <td mat-cell *matCellDef="let row" [ngStyle]="getColour(row.Mar)">
+          {{ row.Mar }}
+        </td>
+      </ng-container>
+
+      <ng-container matColumnDef="Apr">
+        <th mat-header-cell *matHeaderCellDef>Apr</th>
+        <td mat-cell *matCellDef="let row" [ngStyle]="getColour(row.Apr)">
+          {{ row.Apr }}
+        </td>
+      </ng-container>
+
+      <ng-container matColumnDef="May">
+        <th mat-header-cell *matHeaderCellDef>May</th>
+        <td mat-cell *matCellDef="let row" [ngStyle]="getColour(row.May)">
+          {{ row.May }}
+        </td>
+      </ng-container>
+
+      <ng-container matColumnDef="Jun">
+        <th mat-header-cell *matHeaderCellDef>Jun</th>
+        <td mat-cell *matCellDef="let row" [ngStyle]="getColour(row.Jun)">
+          {{ row.Jun }}
+        </td>
+      </ng-container>
+
+      <ng-container matColumnDef="Jul">
+        <th mat-header-cell *matHeaderCellDef>Jul</th>
+        <td mat-cell *matCellDef="let row" [ngStyle]="getColour(row.Jul)">
+          {{ row.Jul }}
+        </td>
+      </ng-container>
+
+      <ng-container matColumnDef="Aug">
+        <th mat-header-cell *matHeaderCellDef>Aug</th>
+        <td mat-cell *matCellDef="let row" [ngStyle]="getColour(row.Aug)">
+          {{ row.Aug }}
+        </td>
+      </ng-container>
+
+      <ng-container matColumnDef="Sep">
+        <th mat-header-cell *matHeaderCellDef>Sep</th>
+        <td mat-cell *matCellDef="let row" [ngStyle]="getColour(row.Sep)">
+          {{ row.Sep }}
+        </td>
+      </ng-container>
+
+      <ng-container matColumnDef="Oct">
+        <th mat-header-cell *matHeaderCellDef>Oct</th>
+        <td mat-cell *matCellDef="let row" [ngStyle]="getColour(row.Oct)">
+          {{ row.Oct }}
+        </td>
+      </ng-container>
+
+      <ng-container matColumnDef="Nov">
+        <th mat-header-cell *matHeaderCellDef>Nov</th>
+        <td mat-cell *matCellDef="let row" [ngStyle]="getColour(row.Nov)">
+          {{ row.Nov }}
+        </td>
+      </ng-container>
+
+      <ng-container matColumnDef="Dec">
+        <th mat-header-cell *matHeaderCellDef>Dec</th>
+        <td mat-cell *matCellDef="let row" [ngStyle]="getColour(row.Dec)">
+          {{ row.Dec }}
+        </td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+    </table>
+  </section>
+</section>

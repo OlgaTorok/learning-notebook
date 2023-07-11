@@ -28,6 +28,9 @@ import { TableOrderComponent } from './tables/table-order/table-order.component'
 import { TableResponsiveComponent } from './tables/table-responsive/table-responsive.component';
 import { TableSuperComponent } from './tables/table-super/table-super.component';
 import { TableHeatmapComponent } from './tables/table-heatmap/table-heatmap.component';
+import { HeatmapTableHslaComponent } from './tables/heatmap/heatmap-table-hsla/heatmap-table-hsla.component';
+import { HeatmapTableCustomComponent } from './tables/heatmap/heatmap-table-custom/heatmap-table-custom.component';
+import { HeatmapTableRgbComponent } from './tables/heatmap/heatmap-table-rgb/heatmap-table-rgb.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +46,9 @@ import { TableHeatmapComponent } from './tables/table-heatmap/table-heatmap.comp
     TableResponsiveComponent,
     TableSuperComponent,
     TableHeatmapComponent,
+    HeatmapTableHslaComponent,
+    HeatmapTableCustomComponent,
+    HeatmapTableRgbComponent
   ],
   imports: [
     BrowserModule,
