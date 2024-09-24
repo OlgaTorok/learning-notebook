@@ -71,6 +71,23 @@
 
       <div
         class="card card-small"
+        (click)="selection.value = 'new-ts'"
+        tabindex="0"
+      >
+        <svg
+          class="material-icons"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+        >
+          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
+        </svg>
+        <span>React TypeScript</span>
+      </div>
+
+      <div
+        class="card card-small"
         (click)="selection.value = 'format'"
         tabindex="0"
       >
@@ -136,15 +153,34 @@
         </svg>
         <span>Run Application</span>
       </div>
+
+      <div
+        class="card card-small"
+        (click)="selection.value = 'update'"
+        tabindex="0"
+      >
+        <svg
+          class="material-icons"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+        >
+          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
+        </svg>
+        <span>Update Version</span>
+      </div>
     </div>
 
     <!-- Terminal -->
     <div class="terminal" [ngSwitch]="selection.value">
-      <pre *ngSwitchDefault>npm init react-app my-app</pre>
+      <pre *ngSwitchDefault>npx create-react-app my-app</pre>
+      <pre *ngSwitchCase="'new-ts'">npx create-react-app my-app --template typescript</pre>
       <pre *ngSwitchCase="'format'">npm install --save husky lint-staged prettier</pre>
       <pre *ngSwitchCase="'test'">npm test</pre>
       <pre *ngSwitchCase="'build'">npm run build</pre>
       <pre *ngSwitchCase="'serve'">npm start</pre>
+      <pre *ngSwitchCase="'update'">npm install react-scripts@latest</pre>
     </div>
   </div>
 </div>
